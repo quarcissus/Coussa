@@ -1,0 +1,353 @@
+/* AUX CLASSSES */
+
+.aux {
+    width: 100vw;
+    height: 300px;
+    background-color: #fff;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+}
+/*! ********************** MAIN SECTION  **************************/
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-img {
+    background-image: url('./imgs/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #44cff0;
+}
+.filter-bg {
+    background-color: #0d0d13;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+/*! ********************** NAV SECTION  **************************/
+.hamburger {
+    display: none;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    font-size: calc(0.5vw + 0.5em);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.left {
+    flex: 1;
+    padding: 20px 0 5px 40px;
+}
+
+.logo {
+    width: 260px;
+    cursor: pointer;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* flex class */
+}
+
+.close-menu {
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+.right__nav {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    /* flex class */
+}
+
+.right__nav li {
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.right__nav li:last-child {
+    margin-right: 20px;
+}
+.nav-link {
+    transition: color 0.5s ease;
+}
+
+.nav-link:hover,
+.active {
+    color: #ff932f;
+}
+.right-menu-btn {
+    flex: 0.2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 40px;
+    position: relative;
+    z-index: 2;
+    /* flex class */
+    align-items: center;
+}
+
+.right-menu-btn div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    /* flex class */
+    align-items: center;
+    color: #ff932f;
+    background-color: #ffffff00;
+    border: 1px solid #ff932f;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.right-menu-btn div:hover {
+    background-color: #ff932f;
+    color: #000;
+}
+
+.landing__title {
+    font-family: 'Jaldi', sans-serif;
+}
+
+/*! ********************** LANDING SECTION  **************************/
+.landing-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+
+.landing__title {
+    margin-top: 80px;
+}
+
+.landing__title h1 {
+    font-size: calc(2em + 4vw);
+    margin: 0;
+    line-height: 1.05;
+}
+
+.landing__desc {
+    font-size: 20px;
+    color: rgb(228, 228, 228);
+}
+
+.landing__desc p {
+    line-height: 1.5;
+    font-weight: 300;
+    width: 590px;
+    font-size: calc(0.8vw + 0.5em);
+}
+.landing__cta {
+    margin-top: 20px;
+}
+.landing__cta button:focus {
+    outline: none;
+}
+.landing__cta button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #ff932f;
+    font-size: calc(1vw + 0.5em);
+    margin-right: 80px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.landing__cta button:first-child {
+    border: none;
+    background-color: #ff9029;
+    transition: all 0.3s ease;
+}
+.landing__cta button:last-child {
+    color: #ff932f;
+    transition: all 0.3s ease;
+}
+
+.landing__cta button:first-child:hover {
+    background-color: #ff7b00;
+    box-shadow: 0 0 10px rgb(68, 68, 68);
+}
+.landing__cta button:last-child:hover {
+    border: 2px solid #ff7b00;
+    background-color: #ff7b00;
+    color: #000;
+}
+/*! ********************** SM PANEL SECTION  **************************/
+
+.right-tab {
+    height: 100vh;
+    width: 12vw;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sm-item {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #a3a3a3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: border 0.3s ease;
+}
+.sm-item img {
+    width: 25px;
+    opacity: 60%;
+    transition: opacity 0.3s ease;
+}
+.sm-item:hover {
+    border: 2px solid #a3a3a38c;
+}
+.sm-item:hover img {
+    width: 25px;
+    opacity: 100%;
+}
+
+/*! ********************** SM PANEL SECTION  **************************/
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1040px) {
+    .right-menu-btn {
+        padding-right: 5px;
+    }
+
+    .right-tab {
+        bottom: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+    .sm-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.521);
+    }
+
+    .sm-item {
+        margin: 0 60px 0 0;
+    }
+}
+@media screen and (max-width: 810px) {
+    .right-menu-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger img {
+        width: 40px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .right {
+        height: 100vh;
+        width: 50vw;
+        position: absolute;
+        right: -50vw;
+
+        /* transform: translateX(50vw); */
+        background-color: #fff;
+        transition: all 1s ease;
+        color: #000;
+    }
+
+    .right__nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 2em;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+    .landing__desc p {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .landing__desc p {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .logo {
+        width: 180px;
+    }
+
+    .hamburger {
+        width: 60px;
+        flex: 1;
+    }
+    .hamburger img {
+        margin-right: 10px;
+    }
+
+    .right {
+        width: 100vw;
+        transform: translateX(100vw);
+    }
+}
