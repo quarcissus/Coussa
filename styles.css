@@ -113,8 +113,8 @@ nav {
     flex: 0.2;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 40px;
+    justify-content: center;
+    padding-right: 10px;
     position: relative;
     z-index: 2;
     /* flex class */
@@ -193,6 +193,7 @@ nav {
     border: none;
     background-color: #ff9029;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 .landing__cta button:last-child {
     color: #ff932f;
@@ -256,7 +257,7 @@ nav {
 
 @media screen and (max-width: 1040px) {
     .right-menu-btn {
-        padding-right: 5px;
+        padding-right: 25px;
     }
 
     .right-tab {
