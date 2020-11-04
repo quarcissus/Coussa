@@ -31,8 +31,11 @@ main {
 }
 
 .main-img {
-    background-image: url('./imgs/main.jpg');
+    background-image: url('./imgs/main.png');
     background-repeat: no-repeat;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
     z-index: -2;
