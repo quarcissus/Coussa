@@ -32,7 +32,7 @@ body {
 }
 /*! ********************** MAIN SECTION  **************************/
 /*! ********************** MODAL SECTION  **************************/
-/* .modal-wrapper {
+.modal-wrapper {
     background-color: rgba(0, 0, 0, 0.521);
     width: 100vw;
     height: 100vh;
@@ -52,14 +52,69 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
 }
-.form {
+
+.products-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.products__title{
+    font-family: serif;
+    font-family: 'Jaldi', sans-serif;
+    color: #ff9029;
+    font-size: 60px;
+    text-transform: uppercase;
+    flex: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: none;
-} */
+    border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.products__select{
+    /* background-color: black; */
+    width: 70%;
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 440px;
+
+}
+
+.product-item{
+    width: 150px;
+    height: 130px;
+    border: 2px solid #FF932F;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1 ease;
+
+}
+
+.product-item:hover{
+    box-shadow: 0 0 20px #b8b7b780;
+
+}
+.product-item img{
+    width: 150px;
+    height: 90px;
+}
+.product-item p{
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-left: 5px;
+}
 main {
     width: 100vw;
     height: 100vh;
