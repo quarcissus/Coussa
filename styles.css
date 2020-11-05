@@ -51,12 +51,13 @@ main {
     width: 100vw;
     height: 100vh;
     background-color: #44cff0;
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, -2);
+    -webkit-transform: translate3d(0, 0, -2);
 }
 .filter-bg {
     background-color: #0d0d13;
-    opacity: 70%;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
     width: 100%;
     height: 100%;
     position: absolute;
