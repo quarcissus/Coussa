@@ -332,6 +332,11 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
+    }
+    .right__nav li {
+        margin-left: 70px;
+        cursor: pointer;
     }
 
     .nav-link {
