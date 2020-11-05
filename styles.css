@@ -51,7 +51,7 @@ main {
     height: 100vh;
     background-color: #44cff0;
     transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, -2);
 }
 .filter-bg {
     background-color: #0d0d13;
@@ -363,5 +363,24 @@ nav {
     .right {
         width: 100vw;
         transform: translateX(100vw);
+    }
+
+    .landing__title {
+        font-size: calc(0.5em + 1vw);
+    }
+
+    .landing__desc p {
+        width: 260px;
+        font-size: calc(1vw + 0.8em);
+    }
+
+    .landing__cta {
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .landing__cta button {
+        margin: 15px 15px 15px 0;
     }
 }
