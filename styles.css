@@ -372,6 +372,16 @@ nav {
         transform: translateX(100vw);
     }
 
+    .right__nav {
+        align-items: center;
+    }
+    .right__nav li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .right__nav li:last-child {
+        margin: 0;
+    }
     .landing__title {
         font-size: calc(0.5em + 1vw);
     }
