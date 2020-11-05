@@ -31,6 +31,35 @@ body {
     width: 100vw;
 }
 /*! ********************** MAIN SECTION  **************************/
+/*! ********************** MODAL SECTION  **************************/
+/* .modal-wrapper {
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal {
+    background-color: #fff;
+    color: #000;
+    width: 60vw;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+} */
 main {
     width: 100vw;
     height: 100vh;
@@ -271,6 +300,8 @@ nav {
 }
 
 @media screen and (max-width: 1040px) {
+    /*? ********************** landing page SECTION  **************************/
+
     .right-menu-btn {
         padding-right: 25px;
     }
@@ -295,6 +326,8 @@ nav {
     }
 }
 @media screen and (max-width: 810px) {
+    /*? ********************** landing page SECTION  **************************/
+
     .right-menu-btn {
         display: none;
     }
@@ -350,11 +383,15 @@ nav {
     }
 }
 @media screen and (max-width: 530px) {
+    /*? ********************** landing page SECTION  **************************/
+
     .landing__desc p {
         width: 400px;
     }
 }
 @media screen and (max-width: 400px) {
+    /*? ********************** landing page SECTION  **************************/
+
     .logo {
         width: 180px;
     }
@@ -378,6 +415,7 @@ nav {
     .right__nav li {
         margin: 0;
         margin-bottom: 10px;
+        margin:top: 30px;
     }
     .right__nav li:last-child {
         margin: 0;
