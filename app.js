@@ -57,5 +57,8 @@ postProduct_btn.addEventListener('click', function (e) {
 });
 
 sendInfo_btn.addEventListener('click', function (e) {
+    document.querySelector('.products__select').style.display = 'flex';
     document.querySelector('.modal-wrapper').style.display = 'none';
+    document.querySelector('.form-postProduct').style.display = 'none';
+    document.querySelector('.form-sendInfo').style.display = 'none';
 });
