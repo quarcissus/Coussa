@@ -7,7 +7,8 @@ const modal = document.querySelector('.modal');
 const services_type = document.querySelectorAll('.product-item');
 const postProduct_btn = document.querySelector('.postProduct-btn');
 const sendInfo_btn = document.querySelector('.sendInfo-btn');
-const product_btn = document.querySelector('.landing__cta');
+const product_btn = document.querySelector('.landingCta-productBtn');
+const service_btn = document.querySelector('.landingCta-serviceBtn');
 const closeModal = document.querySelector('.closeModal');
 
 window.addEventListener('resize', function (e) {

@@ -449,6 +449,30 @@ nav {
 
 /*! ********************** SM PANEL SECTION  **************************/
 
+@media screen and (max-height: 700px) {
+    /*? ********************** landing page SECTION  **************************/
+
+    .modal {
+        height: 75vh !important;
+    }
+
+    .sendInfo-wrapper input{
+        margin-bottom: 20px;
+    }
+
+    .sendInfo-wrapper input:first-child{
+        margin-top: 20px;
+    }
+
+    .input{
+        margin:0 0 20px 0;
+    }
+
+    .sendInfo-btn{
+        margin: 0 0 20px 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 }
 
@@ -535,11 +559,76 @@ nav {
         width: 500px;
     }
 }
+
+
+@media screen and (max-width: 770px) {
+    /*? ********************** MODAL  SECTION  **************************/
+
+    .closeModal {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .closeModal img {
+        width: 20px;
+    }
+    .products__select{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        max-width: 323px;
+        padding: 20px 0;
+    }
+    .product-item{
+        width: 50%;
+        margin-bottom: 20px;
+        height: 160px;
+    }
+
+
+    .product-item img{
+        width: 100%;
+    }
+
+
+    .postProduct-wrapper input{
+        width: 80%;
+    }
+
+    .sendInfo-wrapper .input{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 530px) {
     /*? ********************** landing page SECTION  **************************/
 
     .landing__desc p {
         width: 400px;
+    }
+
+    .modal{
+        width: 85vw;
+    }
+
+    .products__select{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product-item{
+        width: 70%;
+    }
+
+    .product-item img{
+        height: 120px;
+    }
+
+    .product-item p{
+        font-size: 25px;
+        padding-bottom: 10px;
     }
 }
 @media screen and (max-width: 400px) {
