@@ -15,28 +15,87 @@
         <main>
             <div class="modal-wrapper">
                 <div class="modal">
-                   <div class="products-wrapper">
-                       <div class="products__title">Productos</div>
-                       <div class="products__select">
-                            <div class="product-item">
-                                <img src="./imgs/obrero.svg" alt="MRO">
+                    <div class="products-wrapper">
+                        <div class="closeModal">
+                            <img src="./imgs/cerrar.svg" alt="" />
+                        </div>
+                        <div class="products__title main_title">Productos</div>
+                        <div class="products__title quote">Cotizar</div>
+                        <div class="products__select">
+                            <div class="product-item" data-type="MRO">
+                                <img src="./imgs/obrero.svg" alt="MRO" />
                                 <p>MRO</p>
                             </div>
-                            <div class="product-item">
-                                <img src="./imgs/tienda-de-reparacion.svg" alt="MRO">
+                            <div class="product-item" data-type="Ferreteria">
+                                <img
+                                    src="./imgs/tienda-de-reparacion.svg"
+                                    alt="Ferreteria"
+                                />
                                 <p>Ferreteria</p>
                             </div>
-                            <div class="product-item">
-                                <img src="./imgs/papeleria.svg" alt="MRO">
+                            <div class="product-item" data-type="Papeleria">
+                                <img
+                                    src="./imgs/papeleria.svg"
+                                    alt="Papeleria"
+                                />
                                 <p>Papeleria</p>
                             </div>
-                            <div class="product-item">
-                                <img src="./imgs/fuente-de-alimentacion.svg" alt="MRO">
+                            <div class="product-item" data-type="Electricidad">
+                                <img
+                                    src="./imgs/fuente-de-alimentacion.svg"
+                                    alt="Electricidad"
+                                />
                                 <p>Electricidad</p>
                             </div>
-                            
-                       </div>
-                   </div>
+                        </div>
+                        <div class="form-postProduct">
+                            <div class="postProduct-wrapper">
+                                <input
+                                    class="input"
+                                    type="text"
+                                    placeholder="Nombre"
+                                    name="name"
+                                    id="name"
+                                />
+                                <input
+                                    class="input"
+                                    type="text"
+                                    placeholder="Correo"
+                                    name="email"
+                                    id="email"
+                                />
+                                <input
+                                    class="input"
+                                    type="text"
+                                    placeholder="Número"
+                                    name="number"
+                                    id="number"
+                                />
+                            </div>
+                            <div class="postProduct-btn">Continuar</div>
+                        </div>
+                        <div class="form-sendInfo">
+                            <div class="sendInfo-wrapper">
+                                <input
+                                    class="input"
+                                    type="text"
+                                    placeholder="Product"
+                                    id="product"
+                                />
+                                <textarea
+                                    class="input"
+                                    name="product-desct"
+                                    id="product-desct"
+                                    id=""
+                                    cols="70"
+                                    rows="9"
+                                    placeholder="Describa exactamente que productos desea cotizar."
+                                ></textarea>
+
+                                <div class="sendInfo-btn">Cotizar</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
