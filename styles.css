@@ -302,9 +302,20 @@ nav {
     transition: color 0.5s ease;
 }
 
-.nav-link:hover,
+.nav-link a{
+    color: #fff;
+    transition: color 0.5s ease;
+
+}
+
+.nav-link a:link{
+    text-decoration: none;
+
+}
+
+.nav-link a:hover,
 .active {
-    color: #ff932f;
+    color: #ff932f !important;
 }
 .right-menu-btn {
     flex: 0.2;
